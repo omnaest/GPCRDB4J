@@ -52,7 +52,7 @@ public class GPCRDBRestAPIUtils
             {
                 RestClient restClient = this.createRestClient();
 
-                String url = restClient.urlBuilder()
+                String url = RestClient.urlBuilder()
                                        .setBaseUrl(baseUrl)
                                        .addPathToken("proteinfamily")
                                        .build();
@@ -64,7 +64,7 @@ public class GPCRDBRestAPIUtils
             public Proteins getProtein(String slugId)
             {
                 RestClient restClient = this.createRestClient();
-                String url = restClient.urlBuilder()
+                String url = RestClient.urlBuilder()
                                        .setBaseUrl(baseUrl)
                                        .addPathToken("proteinfamily")
                                        .addPathToken("proteins")
